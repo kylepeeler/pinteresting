@@ -4,5 +4,4 @@ This is the pinteresting sample application built during my [*One Month Rails*](
 
 Code written by myself with guidance of course.
 
-Currently hosted [*hgit ere*](http://kp-pinteresting.herokuapp.com/).
-
+Currently hosted [*here*](http://kp-pinteresting.herokuapp.com/).
