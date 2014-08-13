@@ -1,6 +1,8 @@
 <%= link_to pins_path do %>
-    <span class="glyphicon glyphicon-arrow-left"></span>
-    Back
+    <div class: "btn btn-primary">
+      <%= icon('arrow-left') %>
+      Back
+    </div>
 <% end %>
 
 <div class="row">
@@ -15,7 +17,7 @@
 
         <% if @pin.user == current_user %>
           <%= link_to edit_pin_path(@pin) do %>
-            <% icon('edit') %>
+            <%= icon('edit') %>
             Edit
             <% end %>
         <% end %>
