@@ -2,8 +2,17 @@ Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Required for Heroku
-  # TODO: Set actual hostname
-  config.action_mailer.default_url_options = { host: 'localhost:3000' }
+  config.action_mailer.default_url_options = { host: 'kp-pinteresting.herokuapp.com' }
+
+  # Sets Paperclip to upload images to Amazon S3
+  config.paperclip_defaults = {
+  :storage => :s3,
+  :s3_credentials => {
+    :bucket => ENV['AWS_BUCKET'],
+    :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
+    :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
+  }
+}
 
   # Code is not reloaded between requests.
   config.cache_classes = true
