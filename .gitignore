@@ -16,7 +16,7 @@
 /tmp
 .DS_Store
 
-# .gitignore copied from https://github.com/github/gitignore
+# .gitignore sourced from https://github.com/github/gitignore
 *.rbc
 capybara-*.html
 .rspec
